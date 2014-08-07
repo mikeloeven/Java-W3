@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class GenerateSalesPerson
+{
+	public static void main(String args)
+	{
+		
+		Scanner keyboard = new Scanner(System.in);
+		SalesPerson dude1 = new SalesPerson();
+		
+		System.out.println("Enter the Name of SalesPerson #1\n");
+		dude1.setFirstName(keyboard.next());
+		dude1.setLastName(keyboard.next());
+		dude1.printFullnName();
+		
+	
+		
+		
+		
+	}
+}
+
