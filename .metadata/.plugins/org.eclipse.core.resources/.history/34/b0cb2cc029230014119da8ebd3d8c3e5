@@ -1,0 +1,85 @@
+//imports
+
+import java.sql.Time;
+import java.util.Date;
+public class Account {
+//private values 	
+	private int id = 0;
+	private double ballance =0.0;
+	private double annualInterestRate = 0.0;
+	//generate once on creation read only
+	private Date dateCreated = new Date();
+	
+	
+	
+//Constructors
+	//empty
+	Account(){}
+	//partials
+	Account(int ID)
+	{
+		this.id = ID;
+	}
+	
+	Account(int ID, double BALLANCE)
+	{
+		this.id = ID;
+		this.ballance = BALLANCE;
+	}
+	//complete
+	Account(int ID, double BALLANCE, double ANNUALINTERESTRATE)
+	{
+		this.id = ID;
+		this.ballance = BALLANCE;
+		this.annualInterestRate=ANNUALINTERESTRATE;
+	}
+
+
+
+	
+//Accessors
+	
+	public int getId() {
+		return id;
+	}
+	
+	public double getBallance() {
+		return ballance;
+	}
+	
+	public double getAnnualInterestRate() {
+		return annualInterestRate;
+	}
+	
+	public Date getDateCreated() {
+		return dateCreated;
+	}
+//mutators
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setBallance(double ballance) {
+		this.ballance = ballance;
+	}
+
+	public void setAnnualInterestRate(double annualInterestRate) {
+		this.annualInterestRate = annualInterestRate;
+	}	
+	
+//methods
+	//returns monthly interest rate
+	public double getMonthlyInterestRate()
+	{
+		return (this.annualInterestRate/12);
+	}
+	//returns monthly interest
+	public double getMonthlyInterest()
+	{
+		return (this.getMonthlyInterestRate()*this.ballance);
+	}
+
+	
+
+}

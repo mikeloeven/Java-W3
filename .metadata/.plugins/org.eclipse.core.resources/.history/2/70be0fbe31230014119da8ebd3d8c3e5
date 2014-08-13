@@ -1,0 +1,16 @@
+
+public class Master {
+	
+	public static void main(String[] args)
+	{
+		
+		
+		
+			Account A1122 = new Account(1122, 20000, 4.5);
+			System.out.println("New Account ID: " +A1122.getId()+ " :Created On: "+A1122.getDateCreated().toString()+" : With a Ballance Of: $"+A1122.getBallance()+" :And a Annual Interest rate Of: "+A1122.getAnnualInterestRate()+"%");
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,64 @@
+import java.sql.Time;
+import java.util.Date;
+public class Account {
+	
+	private int id = 0;
+	private double ballance =0.0;
+	private double annualInterestRate = 0.0;
+	private Date dateCreated = new Date();
+	
+	
+	
+	Account(){}
+	
+	Account(int ID)
+	{
+		this.id = ID;
+	}
+	
+	Account(int ID, double BALLANCE)
+	{
+		this.id = ID;
+		this.ballance = BALLANCE;
+	}
+	Account(int ID, double BALLANCE, double ANNUALINTERESTRATE)
+	{
+		this.id = ID;
+		this.ballance = BALLANCE;
+		this.annualInterestRate=ANNUALINTERESTRATE;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public double getBallance() {
+		return ballance;
+	}
+
+	public void setBallance(double ballance) {
+		this.ballance = ballance;
+	}
+
+	public double getAnnualInterestRate() {
+		return annualInterestRate;
+	}
+
+	public void setAnnualInterestRate(double annualInterestRate) {
+		this.annualInterestRate = annualInterestRate;
+	}
+
+	public Date getDateCreated() {
+		return dateCreated;
+	}
+	
+	
+	date
+	
+	
+
+}

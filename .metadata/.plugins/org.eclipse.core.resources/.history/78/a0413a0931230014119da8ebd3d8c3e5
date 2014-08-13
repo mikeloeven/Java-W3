@@ -1,0 +1,15 @@
+
+public class Master {
+	
+	public static void main(String[] args)
+	{
+		
+		
+		
+			Account A1122 = new Account(1122, 20,000);
+		
+		
+		
+	}
+
+}
