@@ -1,0 +1,87 @@
+import java.util.Scanner;
+
+import javax.management.ValueExp;
+
+
+public class Main {
+	
+	public static void main(String[] args)
+	{
+		
+		RoomOccupancy Room1 = new RoomOccupancy();
+		RoomOccupancy Room2 = new RoomOccupancy();
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Room Occupancy \n \n");
+		int iExit = 1;
+		
+		while (iExit == 1);
+		{
+			//error sentinel
+			int err = 0;
+			//room selector
+			String room = new String();
+			do
+			{
+				System.out.println("Select Room Enter 1 or 2");
+				room = keyboard.nextLine();
+				//error handling
+				if(room.equals("1")||room.equals("2"))
+				{
+					err=0;
+					System.out.println("Room: " + room + " Selected");
+				}
+				else
+				{
+					err=1;
+					System.out.println("Invalid Room");
+				}
+			}while(err==1);
+			
+			// operation selector
+			String selector = new String();
+			do
+			{
+				
+				System.out.println("Add: + Remove: - Display Status: = Quit: 0" );
+				selector = keyboard.nextLine();
+				switch(selector)
+				{
+				case "+":
+					if (room.equals("1")) Room1.addOneToRoom();
+					else Room2.addOneToRoom();
+					break;
+				case "-":
+					if (room.equals("1")) Room1.addOneToRoom();
+					else Room2.addOneToRoom();
+					break;
+				case "=":
+					System.out.println("Room1 Has: " +Room1.getNumber() + " Occupants");
+					System.out.println("Room2 Has: " +Room2.getNumber() + " Occupants");
+					System.out.println("Total For All Rooms Is: " + RoomOccupancy.getTotal() + " People");
+					break;
+				case "0":
+					exit = 0;
+					break;
+				default:
+					System.out.println("Invalid Selection");
+					err=1;
+					break;
+				}				
+			
+			}while(err==1);
+			
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+	}
+
+}
