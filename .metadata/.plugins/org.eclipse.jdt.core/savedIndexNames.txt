@@ -1,3 +1,23 @@
+<<<<<<< HEAD
 INDEX VERSION 1.127+D:\school\Quarter 8\Java\W3\.metadata\.plugins\org.eclipse.jdt.core
 906486520.index
 4037166710.index
+=======
+INDEX VERSION 1.127+/home/skytap/java_projects/W3/.metadata/.plugins/org.eclipse.jdt.core
+2982035129.index
+3885805113.index
+3721837726.index
+2066489604.index
+2771403403.index
+742522455.index
+3214207201.index
+2630498905.index
+2233963263.index
+1913109094.index
+3315622799.index
+46282419.index
+2684974182.index
+3888198363.index
+120211678.index
+2841451250.index
+>>>>>>> 3358f06a902d07869f6270a96cea6ef2e158e40b
